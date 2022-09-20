@@ -1,0 +1,22 @@
+body {
+    margin: auto;
+    text-align: center;
+    margin-top: 130px;
+    background-color: yellowgreen;
+    opacity: 1.0;
+}
+
+.formulir {
+    border: 2px groove yellowgreen;
+    margin-left: 430px;
+    margin-right: 430px;
+    padding-bottom: 10px;
+    border-radius: 9px;
+    background-color: rebeccapurple;
+    opacity: 0.9;
+}
+
+.kirim:hover {
+    background-color: lime;
+    border-radius: 5px;
+}

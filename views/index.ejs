@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Siswa Kelas XII RPL</title>
+</head>
+<body>
+
+    <!-- Tampil data -->
+    <h2>Data Siswa Kelas XII RPL</h2>
+
+    <table border="2">
+        <% Siswa.forEach((sis) => { %>
+            <tr>
+                <td>
+                    <span> <%= sis.nis %>  </span>
+                    <span> <%= sis.nama %> </span>
+                    <span> <%= sis.kelas %> </span>
+                </td>
+            </tr>
+        <% }) %>
+    </table>
+
+    <p><a href="/form.ejs">Add Member</a></p>
+
+</body>
+</html>
