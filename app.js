@@ -37,13 +37,13 @@ app.get('/form', (req, res) => {
 
 /* Routing Database */
 app.post('/create', (req, res) => {
-    con.query('INSERT INTO Siswa (nis) VALUES(?)',
+    con.query('INSERT INTO Siswa (nama,kelas) VALUES(?,?)',
      [req.body.nama],[req.body.kelas],
      (error, results) => {
         res.redirect('index.ejs', {Siswa: results})
      }
     )
-})
+});
 
 /* Melihat hasil di browser */
 app.listen(port, () => {
